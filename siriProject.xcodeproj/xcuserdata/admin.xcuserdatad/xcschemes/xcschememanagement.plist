@@ -4,6 +4,16 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>SiriIntent.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>SiriIntentUI.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
 		<key>siriProject.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -18,6 +28,16 @@
 			<true/>
 		</dict>
 		<key>846728291EA527140099D103</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8467283D1EA528CC0099D103</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>846728461EA528CC0099D103</key>
 		<dict>
 			<key>primary</key>
 			<true/>

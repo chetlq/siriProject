@@ -19,6 +19,10 @@
 		846728501EA528CD0099D103 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8467284E1EA528CD0099D103 /* MainInterface.storyboard */; };
 		846728541EA528CD0099D103 /* SiriIntentUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 846728471EA528CC0099D103 /* SiriIntentUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		846728571EA528CD0099D103 /* SiriIntent.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 8467283E1EA528CC0099D103 /* SiriIntent.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		848DE4DB1EAE6812004A9232 /* PaymentContact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848DE4DA1EAE6812004A9232 /* PaymentContact.swift */; };
+		848DE4DC1EAE7733004A9232 /* PaymentContact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848DE4DA1EAE6812004A9232 /* PaymentContact.swift */; };
+		848DE4DD1EAE7734004A9232 /* PaymentContact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848DE4DA1EAE6812004A9232 /* PaymentContact.swift */; };
+		84C3FA0D1EA7573B006DE7A0 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84C3FA0C1EA7573B006DE7A0 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +84,8 @@
 		8467284C1EA528CD0099D103 /* IntentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentViewController.swift; sourceTree = "<group>"; };
 		8467284F1EA528CD0099D103 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		846728511EA528CD0099D103 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		848DE4DA1EAE6812004A9232 /* PaymentContact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentContact.swift; sourceTree = "<group>"; };
+		84C3FA0C1EA7573B006DE7A0 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +114,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84C3FA0D1EA7573B006DE7A0 /* CoreLocation.framework in Frameworks */,
 				8467284A1EA528CD0099D103 /* IntentsUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -145,6 +152,7 @@
 				846728191EA527140099D103 /* AppDelegate.swift */,
 				8467281B1EA527140099D103 /* ViewController.swift */,
 				8467281D1EA527140099D103 /* Main.storyboard */,
+				848DE4DA1EAE6812004A9232 /* PaymentContact.swift */,
 				846728201EA527140099D103 /* Assets.xcassets */,
 				846728221EA527140099D103 /* LaunchScreen.storyboard */,
 				846728251EA527140099D103 /* Info.plist */,
@@ -173,6 +181,7 @@
 		846728481EA528CC0099D103 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				84C3FA0C1EA7573B006DE7A0 /* CoreLocation.framework */,
 				846728491EA528CC0099D103 /* IntentsUI.framework */,
 			);
 			name = Frameworks;
@@ -364,6 +373,7 @@
 			files = (
 				8467281C1EA527140099D103 /* ViewController.swift in Sources */,
 				8467281A1EA527140099D103 /* AppDelegate.swift in Sources */,
+				848DE4DB1EAE6812004A9232 /* PaymentContact.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -380,6 +390,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				846728411EA528CC0099D103 /* IntentHandler.swift in Sources */,
+				848DE4DC1EAE7733004A9232 /* PaymentContact.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -388,6 +399,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8467284D1EA528CD0099D103 /* IntentViewController.swift in Sources */,
+				848DE4DD1EAE7734004A9232 /* PaymentContact.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -536,6 +548,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = siriProject/siriProject.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = B5MHTW4TA8;
 				INFOPLIST_FILE = siriProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -551,6 +564,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = siriProject/siriProject.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = B5MHTW4TA8;
 				INFOPLIST_FILE = siriProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -661,6 +675,7 @@
 				846728351EA527140099D103 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		846728361EA527140099D103 /* Build configuration list for PBXNativeTarget "siriProjectTests" */ = {
 			isa = XCConfigurationList;
@@ -669,6 +684,7 @@
 				846728381EA527140099D103 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		846728581EA528CD0099D103 /* Build configuration list for PBXNativeTarget "SiriIntentUI" */ = {
 			isa = XCConfigurationList;
@@ -677,6 +693,7 @@
 				8467285A1EA528CD0099D103 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8467285B1EA528CD0099D103 /* Build configuration list for PBXNativeTarget "SiriIntent" */ = {
 			isa = XCConfigurationList;
@@ -685,6 +702,7 @@
 				8467285D1EA528CD0099D103 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

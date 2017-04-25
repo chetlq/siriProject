@@ -34,5 +34,7 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSSiriUsageDescription</key>
+	<string>Siri will able to help you make payment</string>
 </dict>
 </plist>

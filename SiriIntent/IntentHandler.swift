@@ -115,7 +115,7 @@ class SendMoneyIntentHandler: NSObject, INSendPaymentIntentHandling{
                     resolutionResult = INPersonResolutionResult.success(with: recipientMatched)
                 default:
                     print("more then one matched")
-                    let disambiquationOptions:[INPerson] = matchedContacts.map{ contact in return contact.inPerson()}
+                    let disambiquationOptions:[INPerson] = matchedContacts//.map{ val in return contact.inPerson()}
                     resolutionResult = INPersonResolutionResult.disambiguation(with: disambiquationOptions)
                 }
                 completion(resolutionResult!)
